@@ -14,6 +14,19 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
 	crossorigin="anonymous">
+<style type="text/css">
+h1 {
+	color: blue;
+	font-size: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.h {
+	font-size: 30px;
+	font-weight: bold;
+}
+</style>
 
 <title>Manager Register Page</title>
 </head>
@@ -28,18 +41,18 @@
 	<%-- 	<p><%=id%></p> --%>
 	<form action="mangRegisterServlet" method="post">
 		<div class="form-group">
-			<label for="validationCustom01">ID</label> <input type="number"
+			<label for="validationCustom01"class="h">ID</label> <input type="number"
 				class="form-control" id="validationCustom01" name="mang_id"
 				placeholder="Enter 2 digits" required>
 			<!-- 			<div class="invalid-feedback">The id already exists.</div> -->
 		</div>
 		<div class="form-group">
-			<label for="validationCustom02">Name</label> <input type="text"
+			<label for="validationCustom02"v>Name</label> <input type="text"
 				class="form-control" id="validationCustom02" name="mang_name"
 				placeholder="Enter your name" required>
 		</div>
 		<div class="form-group">
-			<label for="validationCustom03">Password</label> <input
+			<label for="validationCustom03"class="h">Password</label> <input
 				type="password" class="form-control" id="validationCustom03"
 				name="mang_pass" placeholder="Enter password" required>
 		</div>

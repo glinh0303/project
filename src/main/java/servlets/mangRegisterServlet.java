@@ -36,6 +36,8 @@ public class mangRegisterServlet extends HttpServlet {
 				requestDispatch.forward(req, resp);
 			} else {
 				System.out.println("Insert unsuccessfully");
+				RequestDispatcher requestDispatch = req.getRequestDispatcher("error.jsp");
+				requestDispatch.forward(req, resp);
 			}
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

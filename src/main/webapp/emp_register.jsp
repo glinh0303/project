@@ -15,38 +15,53 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
 	crossorigin="anonymous">
+<style type="text/css">
+h1 {
+	color: blue;
+	font-size: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.h {
+	font-size: 30px;
+	font-weight: bold;
+}
+</style>
 
 <title>Security Register Page</title>
 </head>
 <body>
-	<h1>Register Page!</h1>
-<%-- 	<% --%>
-<!-- // 	EmpManager empManager = new EmpManager(); -->
-<!-- // 	ArrayList<Employee> empList = empManager.getEmpList(); -->
-<!-- // 	for (int i = 0; i < empList.size(); i++) { -->
-<!-- // 		int id = empList.get(i).getEmp_id(); -->
-<%-- 	%> --%>
-<%-- 	<p><%=id%></p> --%>
+	<h1> Employee Register Page!</h1>
+	<%-- 	<% --%>
+	<!-- // 	EmpManager empManager = new EmpManager(); -->
+	<!-- // 	ArrayList<Employee> empList = empManager.getEmpList(); -->
+	<!-- // 	for (int i = 0; i < empList.size(); i++) { -->
+	<!-- // 		int id = empList.get(i).getEmp_id(); -->
+	<%-- 	%> --%>
+	<%-- 	<p><%=id%></p> --%>
 	<form action="empRegisterServlet" method="post">
 		<div class="form-group">
-			<label for="validationCustom01">ID</label> <input type="number"
-				class="form-control" id="validationCustom01" name="emp_id" placeholder="Enter 3 digits" required>
-<!-- 			<div class="invalid-feedback">The id already exists.</div> -->
+			<label for="validationCustom01" class="h">ID</label> <input type="number"
+				class="form-control" id="validationCustom01" name="emp_id"
+				placeholder="Enter 3 digits" required>
+			<!-- 			<div class="invalid-feedback">The id already exists.</div> -->
 		</div>
 		<div class="form-group">
-			<label for="validationCustom02">Name</label> <input type="text"
-				class="form-control" id="validationCustom02" name="emp_name" placeholder="Enter your name" required>
+			<label for="validationCustom02" class="h">Name</label> <input type="text"
+				class="form-control" id="validationCustom02" name="emp_name"
+				placeholder="Enter your name" required>
 		</div>
 		<div class="form-group">
-			<label for="validationCustom03">Password</label> <input type="password"
-				class="form-control" id="validationCustom03" name="emp_pass" placeholder="Enter password" required>
+			<label for="validationCustom03" class="h">Password</label> <input
+				type="password" class="form-control" id="validationCustom03"
+				name="emp_pass" placeholder="Enter password" required>
 		</div>
 
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
-<%-- 	<% --%>
-<!-- // 	} -->
-<%-- 	%> --%>
+	<%-- 	<% --%>
+	<!-- // 	} -->
+	<%-- 	%> --%>
 
 
 	<!-- Optional JavaScript; choose one of the two! -->

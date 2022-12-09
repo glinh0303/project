@@ -11,7 +11,25 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
 	crossorigin="anonymous">
+<style type="text/css">
+h1 {
+	color: blue;
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+}
 
+.h {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.btn {
+	display:fex;
+	justify-content:center;
+	text-align: center;
+}
+</style>
 <title>Manager Login</title>
 </head>
 <body>
@@ -20,12 +38,12 @@
 	<form action="mangLoginServlet" method="post">
 		<div class="form-row">
 			<div class="col-md-6 mb-3">
-				<label for="validationDefault01">Manager id</label> <input
+				<label for="validationDefault01" class="h">Manager ID</label> <input
 					type="number" class="form-control" id="validationDefault01"
 					name="mang_id" placeholder="Enter your id" required>
 			</div>
 			<div class="col-md-6 mb-3">
-				<label for="validationDefault02">Password</label> <input
+				<label for="validationDefault02" class="h">Password</label> <input
 					type="password" class="form-control" id="validationDefault02"
 					name="mang_pass" placeholder="Enter your password" required>
 			</div>

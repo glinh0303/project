@@ -11,6 +11,19 @@
 	href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
 	integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
 	crossorigin="anonymous">
+<style type="text/css">
+h1 {
+	color: blue;
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.h {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+</style>
 
 <title>Employee Login</title>
 </head>
@@ -20,12 +33,12 @@
 	<form action="empLoginServlet" method="post">
 		<div class="form-row">
 			<div class="col-md-6 mb-3">
-				<label for="validationDefault01">Employee id</label> <input
+				<label for="validationDefault01" class="h">Employee ID</label> <input
 					type="number" class="form-control" id="validationDefault01"
-					 name="emp_id" placeholder="Enter your id" required>
+					name="emp_id" placeholder="Enter your id" required>
 			</div>
 			<div class="col-md-6 mb-3">
-				<label for="validationDefault02">Password</label> <input
+				<label for="validationDefault02" class="h">Password</label> <input
 					type="password" class="form-control" id="validationDefault02"
 					name="emp_pass" placeholder="Enter your password" required>
 			</div>
